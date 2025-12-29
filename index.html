@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teologia Acadêmica Essencial - Formação Bíblica</title>
+    
+    <!-- SEO & Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://i.imgur.com">
+    <link rel="preconnect" href="https://esm.sh">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1283010196910930');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1283010196910930&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ['Montserrat', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                orange: '#FF7A00',
+                'orange-light': '#FFA800',
+              }
+            },
+            animation: {
+              'pulse-soft': 'pulse-soft 2s infinite ease-in-out',
+              'bounce-slow': 'bounce-slow 3s infinite ease-in-out',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              'pulse-soft': {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(255, 122, 0, 0.4)' },
+                '50%': { transform: 'scale(1.05)', boxShadow: '0 0 20px 10px rgba(255, 122, 0, 0.2)' },
+              },
+              'bounce-slow': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              'fadeInUp': {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              'float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            },
+            backgroundImage: {
+              'orange-gradient': 'linear-gradient(135deg, #FFA800 0%, #FF7A00 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      :root {
+        --brand-orange: #FF7A00;
+        --brand-orange-light: #FFA800;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-montserrat { font-family: 'Montserrat', sans-serif; }
+      
+      .text-glow {
+        text-shadow: 0 0 20px rgba(255, 122, 0, 0.4);
+      }
+      .btn-shine {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-shine::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(45deg);
+        transition: 0.5s;
+        opacity: 0;
+      }
+      .btn-shine:hover::after {
+        opacity: 1;
+        left: 120%;
+        top: 120%;
+      }
+      
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FF7A00;
+        border-radius: 5px;
+      }
+    </style>
+    
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  </body>
+</html>
